@@ -1,21 +1,9 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <title>Redirigiendo a WhatsApp...</title>
-
-    <!-- Redirección automática -->
-    <meta http-equiv="refresh" content="0; url=https://api.whatsapp.com/send?phone=5492235761997&text=Hola%20quiero%20info" />
-  </head>
-  <body>
-    <p>Si no te redirige automáticamente, hacé clic acá:</p>
-    <a href="https://api.whatsapp.com/send?phone=5492235761997&text=Hola%20quiero%20info">
-      Ir al WhatsApp
-    </a>
-
-    <script>
-      // Redirección por JavaScript por las dudas
-      window.location.href = "https://api.whatsapp.com/send?phone=5492235761997&text=Hola%20quiero%20info";
-    </script>
-  </body>
-</html>
+{
+  "redirects": [
+    {
+      "source": "/",
+      "destination": "https://api.whatsapp.com/send?phone=5492235761997&text=Hola%20quiero%20info",
+      "permanent": true
+    }
+  ]
+}
